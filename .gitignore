@@ -1,0 +1,5 @@
+*.log
+*.swp
+*.aux
+./Putnam/*pdf
+./Putnam/*tex
