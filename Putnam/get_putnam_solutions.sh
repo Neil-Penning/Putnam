@@ -1,5 +1,6 @@
-#!bin/bash
+#!/bin/bash
 # Pull the Solutions from the Archive
-curl -f "https://kskedlaya.org/putnam-archive/[1985-2021]{s}.{pdf,tex}" -O --remote-name
-curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session A problems.pdf" -o 2022a.pdf
-curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session B problems.pdf" -o 2022b.pdf
+curl -f "https://kskedlaya.org/putnam-archive/[1985-2021]s.pdf" -O --remote-name
+# Pull 2022 [sic] Solutions from maa
+curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021 session A solutions.pdf" -o 2022a_s.pdf
+curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021 session B solutions.pdf" -o 2022b_s.pdf
