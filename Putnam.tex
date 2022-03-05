@@ -2,6 +2,7 @@
 \usepackage{pdfpages, graphicx, fancyvrb}
 \usepackage[lmargin=10mm, rmargin=10mm]{geometry}
 \title{Putnam Exam Questions}
+\author{MAA}
 \date{1985-2022}
 
 \begin{document}
@@ -9,7 +10,10 @@
 \thispagestyle{empty}
 \begin{center}
 \begin{BVerbatim}
+#!/bin/bash
+# Pull the Exams from the Archive (ignore failure)
 curl -f "https://kskedlaya.org/putnam-archive/[1985-2022].pdf" -O --remote-name
+# Pull 2022 [sic] Exams from maa
 curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session A problems.pdf" -o 2022a.pdf
 curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session B problems.pdf" -o 2022b.pdf
 \end{BVerbatim}
@@ -53,5 +57,6 @@ curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session B pro
 \includepdf[pages=-]{./Putnam/2019.pdf}
 \includepdf[pages=-]{./Putnam/2020.pdf}
 \includepdf[pages=-]{./Putnam/2021.pdf}
-%\includepdf[pages=-]{./Putnam/2022.pdf}
+\includepdf[pages=-]{./Putnam/2022a.pdf}
+\includepdf[pages=-]{./Putnam/2022b.pdf}
 \end{document}
