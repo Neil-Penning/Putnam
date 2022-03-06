@@ -18,6 +18,9 @@ curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021 session B solu
 \end{BVerbatim}
 \end{center}
 \newpage
+% See 
+% https://tex.stackexchange.com/questions/15989/toc-entries-and-labels-for-included-pdf-pages
+% for how includepdf handles table of contents adding
 \includepdf[pages=-, addtotoc={1, section, 1, 1996, t}]{../Putnam_Source_Files/1996s.pdf}
 \includepdf[pages=-, addtotoc={1, section, 1, 1997, t}]{../Putnam_Source_Files/1997s.pdf}
 \includepdf[pages=-, addtotoc={1, section, 1, 1998, t}]{../Putnam_Source_Files/1998s.pdf}
