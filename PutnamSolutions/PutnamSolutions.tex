@@ -2,7 +2,7 @@
 \usepackage{pdfpages, graphicx, fancyvrb, hyperref}
 \usepackage[margin=10mm]{geometry}
 \title{Putnam Exam Solutions}
-\date{1996-2022}
+\date{1996-2021}
 \author{}
 \hypersetup{}
 \begin{document}
@@ -12,9 +12,6 @@
 #!/bin/bash
 # Pull the Solutions from the Archive (ignore failure)
 curl -f "https://kskedlaya.org/putnam-archive/[1985-2021]s.pdf" -O --remote-name
-# Pull 2022 [sic] Solutions from maa
-curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021 session A solutions.pdf" -o 2022a_s.pdf
-curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021 session B solutions.pdf" -o 2022b_s.pdf
 \end{BVerbatim}
 \end{center}
 \newpage
@@ -47,6 +44,4 @@ curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021 session B solu
 \includepdf[pages=-, addtotoc={1, section, 1, 2019, t}]{../Putnam_Source_Files/2019s.pdf}
 \includepdf[pages=-, addtotoc={1, section, 1, 2020, t}]{../Putnam_Source_Files/2020s.pdf}
 \includepdf[pages=-, addtotoc={1, section, 1, 2021, t}]{../Putnam_Source_Files/2021s.pdf}
-\includepdf[pages=-, addtotoc={1, section, 1, 2022a, t}]{../Putnam_Source_Files/2022a_s.pdf}
-\includepdf[pages=-, addtotoc={1, section, 1, 2022b, t}]{../Putnam_Source_Files/2022b_s.pdf}
 \end{document}

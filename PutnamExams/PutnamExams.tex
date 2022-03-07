@@ -3,7 +3,7 @@
 \usepackage[lmargin=10mm, rmargin=10mm]{geometry}
 \title{Putnam Exam Questions}
 \author{MAA}
-\date{1985-2022}
+\date{1985-2021}
 
 \hypersetup{}
 \begin{document}
@@ -14,9 +14,6 @@
 #!/bin/bash
 # Pull the Exams from the Archive (ignore failure)
 curl -f "https://kskedlaya.org/putnam-archive/[1985-2022].pdf" -O --remote-name
-# Pull 2022 [sic] Exams from maa
-curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session A problems.pdf" -o 2022a.pdf
-curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session B problems.pdf" -o 2022b.pdf
 \end{BVerbatim}
 \end{center}
 
@@ -61,6 +58,4 @@ curl "https://www.maa.org/sites/default/files/pdf/AMC/Putnam 2021F session B pro
 \includepdf[pages=-, addtotoc={1, section, 1, 2019, t}]{../Putnam_Source_Files/2019.pdf}
 \includepdf[pages=-, addtotoc={1, section, 1, 2020, t}]{../Putnam_Source_Files/2020.pdf}
 \includepdf[pages=-, addtotoc={1, section, 1, 2021, t}]{../Putnam_Source_Files/2021.pdf}
-\includepdf[pages=-, addtotoc={1, section, 1, 2022a, t}]{../Putnam_Source_Files/2022a.pdf}
-\includepdf[pages=-, addtotoc={1, section, 1, 2022b, t}]{../Putnam_Source_Files/2022b.pdf}
 \end{document}
